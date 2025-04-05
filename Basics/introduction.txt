@@ -1,0 +1,126 @@
+To show all the databases:
+  show databases;
+To create databases:
+  create database db_name;
+To use database:
+  use db_name;
+To create table:
+  create table student(name varchar(30), id int not null primary key, address varchar(50), marks int);
+To describe table:
+  desc student;
+To insert element into table(secured way):
+  insert into student(marks, id, name, address)values(78,12,'sky','patna');
+To insert element into table(unsecured way):
+  insert into student values('krishna', 32, 'rishikesh', 56);
+Multiple value in single query:
+  insert into student values ('ram', 45, 'haridwar' 79),('radha', 17, 'delhi', 90);
+To select whole table and show the content:
+  select * from student;
+To select particuler column and show the content:
+  select name from student;
+
+  select name, id from student;
+To implement some conditions:
+  select * from student where id = 32;
+
+Duplicate id will produce error, as it is primary key.
+
+To update value in some column:
+  update student set address = 'Deharadun' where id = 45;
+To add new column:
+  alter table student add phoneNo int;
+To update all cells/field in a column:
+  update student set phoneNo = 12345
+      It will update all cells in the column phoneNo with 12345.
+To update single cell/field in a column, add some condition:
+  update student set phoneNo = 12345 where id = 12;
+To modify existing colum:
+  alter table student modify column name varchar(60);
+To remove a column:
+  alter table student drop column phoneNo;
+
+  To check:
+  select * from student;
+  or 
+  desc student;
+
+To delete particular data of a row.
+  delete from student where name = 'kamal';
+
+To find sum, min, max etc aggregate function:
+
+for sum:
+  select sum(marks) from student;
+
+for average marks:
+  select avg(marks) from student;
+
+To show count of column attribute:
+  select count(name) from student;
+
+To find max:
+  select max(marks)from student;
+
+To find min:
+  select min(marks) from student;
+
+To show data ordered by any column attribute:
+  select * from student order by id;
+  or
+  select * from student order by marks;
+
+To show in descending order:
+  select * from student order by id desc;
+
+To select and show name starts with alphabat r:
+  select * from student where name like 'r%';
+
+To select and show name contains last word 'h':
+  select * from student where name like '%h';
+
+To show name contains second alphabet 'a':
+  select * from student where name like '_a%';
+
+To show name contains second last aphabet as '%s_':
+  select * from student where name like '%s_';
+
+To join tables we need two or more table, our 1st table is student, create other one:
+  create table employee(id int not null primary key, salary int, empcode int, name varchar(30));
+
+To insert values in a table:
+  insert into employee values(12,20000, 102, 'aman'), (32,60000, 104, 'arun'), (78, 7000, 105, 'Ram'),(45,30000,202,'kamal');
+
+For inner join:
+  select * from student inner join employee on student.id = employee.id;
+
+select * from student;
+select * from employee;
+  select * from student left join employee on student.id = employee.id;
+
+Right join:
+  select * from student right join employee on student.id = employee.id;
+
+Cross join:
+  select * from student cross join employee;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
