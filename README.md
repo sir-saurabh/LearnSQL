@@ -19,11 +19,9 @@ Date: 05/04/2025
 10. To show the list of tables within the database: <br> `show tables;`
 
 ## Command Line Screen Sort
-1. Start and Login: <br> <img src = ''>
-2. Show databases: <br> <img src = ''>
-3. Create and use databases: <br> <img src = ''>
-4. Create tables: <br> <img src = ''>
-5. Inserting data in tables: <br> <img src = ''>
-6. Show the table contents: <br> <img src = ''>
-7. Deleting table and database: <br> <img src = ''>
-8. 
+1. Start and Login: <br> <img src = 'Screenshot 2025-04-07 221315.png'>
+2. Show databases: <br> <img src = 'Screenshot 2025-04-07 221337.png'>
+3. Create and use databases, Create table: <br> <img src = 'Screenshot 2025-04-07 221458.png'>
+4. Inserting data in tables: <br> <img src = 'Screenshot 2025-04-07 221524.png'>
+5. Show the Databases and Tables: <br> <img src = 'Screenshot 2025-04-07 221549.png'>
+6. Show Table contents and Deleting table and database: <br> <img src = 'Screenshot 2025-04-07 221616.png'>
